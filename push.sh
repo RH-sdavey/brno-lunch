@@ -14,7 +14,7 @@ commit_website_files() {
 upload_files() {
   git remote add origin RH-sdavey:$LUNCH_TOKEN@github.com:RH-sdavey/tieto_lunch.git > /dev/null 2>&1
   echo " git remote add finshed with  : $? "
-  git push --quiet --set-upstream origin master
+  git push --quiet --set-upstream origin gh-pages
 }
 
 echo  "Starting Python Section"
