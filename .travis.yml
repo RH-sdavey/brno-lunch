@@ -10,3 +10,10 @@ script:
   - python3.7 LUNCH_SCRAPER.py
 after_success:
   - bash ./push.sh
+deploy:
+provider: pages
+skip_cleanup: true
+github_token: $LUNCH_TOKEN  # Set in the settings page of your repository, as a secure variable
+keep_history: true
+on:
+  branch: master
