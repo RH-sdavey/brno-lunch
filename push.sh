@@ -12,7 +12,7 @@ commit_website_files() {
 }
 
 upload_files() {
-  git remote add master https://RH-sdavey:190e5e6e3e8c2010fc669157e673d944a4922458@github.com/tieto_lunch.git > /dev/null 2>&1
+  git remote add origin git@github.com:RH-sdavey/tieto_lunch.git > /dev/null 2>&1
   git push --quiet --set-upstream origin master
 }
 
