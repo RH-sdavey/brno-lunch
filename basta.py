@@ -51,3 +51,5 @@ filedata = filedata.replace('>Basta<', ' style="font-size:18px; color:#091034;">
 # Write the file out again
 with open('index.html', 'w') as file:
     file.write(filedata)
+    
+print("Basta OK")
