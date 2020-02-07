@@ -6,8 +6,8 @@ setup_git() {
 }
 
 commit_website_files() {
-  git checkout -b master
-  git add . *.html
+  git checkout master
+  git add index.html
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
@@ -16,6 +16,8 @@ upload_files() {
   git push --quiet --set-upstream origin master
 }
 
+echo "Starting Git Section"
 setup_git
 commit_website_files
 upload_files
+echo "Ending Git Section"
