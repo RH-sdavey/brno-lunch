@@ -25,4 +25,4 @@ filedata = filedata.replace('>Babeta<', ' style="font-size:18px; color:#091034;"
 with open('index.html', 'w') as file:
     file.write(filedata)
 
-
+print("Babeta OK")
