@@ -1,8 +1,8 @@
 #!/bin/sh
 
 setup_git() {
-  git config --global user.email "travis@travis-ci.org"
-  git config --global user.name "Travis CI"
+  git config --global user.email "sean.davey@tieto.com"
+  git config --global user.name "Sean Davey"
 }
 
 commit_website_files() {
@@ -12,7 +12,7 @@ commit_website_files() {
 }
 
 upload_files() {
-  git remote add master https://${GH_TOKEN}@github.com/tieto_lunch.git > /dev/null 2>&1
+  git remote add master https://${LUNCH_TOKEN}@github.com/tieto_lunch.git > /dev/null 2>&1
   git push --quiet --set-upstream origin master
 }
 
