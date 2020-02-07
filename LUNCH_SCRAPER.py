@@ -18,5 +18,5 @@ def button_obed():
     call(["python", "drindy.py"])
     call(["python", "coloseum.py"])
 
-button_obed
+button_obed()
 
