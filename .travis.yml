@@ -9,4 +9,4 @@ install:
 script:
   - python3.7 LUNCH_SCRAPER.pyw
 after_success:
-  - push.sh
+  - bash ./push.sh
