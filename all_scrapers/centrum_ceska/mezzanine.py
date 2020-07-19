@@ -2,8 +2,8 @@ import wget
 import shutil
 import os
 
-dl_iq = '../site_templates/pdfs_sites/MenuMezzanine.pdf'
-master_iq = '../site_templates/pdfs_sites/MenuMezzanine_master.pdf'
+dl_iq = '../../site_templates/pdfs_sites/MenuMezzanine.pdf'
+master_iq = '../../site_templates/pdfs_sites/MenuMezzanine_master.pdf'
 URL = 'http://www.cafe-mezzanine.cz/data/napojak2018-06.pdf'
 
 

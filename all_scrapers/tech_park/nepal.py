@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import unidecode
 URL = f'http://nepalbrno.cz/weekly-menu/'
 rep = "NEPALREPLACEME"
-index_file = 'index.html'
+index_file = 'londynske.html'
 
 # Beautifulsoup magic
 def soup_magic():
