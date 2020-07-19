@@ -3,8 +3,8 @@ import shutil
 import os
 import datetime
 
-dl_iq = '../site_templates/pdfs_sites/MenuIQ.pdf'
-master_iq = '../site_templates/pdfs_sites/menuIQ_master.pdf'
+dl_iq = '../../site_templates/pdfs_sites/MenuIQ.pdf'
+master_iq = '../../site_templates/pdfs_sites/menuIQ_master.pdf'
 URL = 'http://www.iqrestaurant.cz/moravka/'
 
 

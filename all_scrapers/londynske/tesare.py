@@ -1,8 +1,8 @@
 import wget
 import shutil
 import os
-dl_tesare = '../site_templates/pdfs_sites/TesareMenuTODAY.pdf'
-master_tesare = '../site_templates/pdfs_sites/tesare_master_menu.pdf'
+dl_tesare = '../../site_templates/pdfs_sites/TesareMenuTODAY.pdf'
+master_tesare = '../../site_templates/pdfs_sites/tesare_master_menu.pdf'
 URL = 'http://www.utesare.cz/Menu.pdf'
 
 

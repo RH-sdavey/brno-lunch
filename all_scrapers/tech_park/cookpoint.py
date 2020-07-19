@@ -1,8 +1,8 @@
 import wget
 import shutil
 import os
-dl_cookpoint='../site_templates/pdfs_sites/CookpointMenuTODAY.pdf'
-master_cookpoint='../site_templates/pdfs_sites/cookpoint_master_menu.pdf'
+dl_cookpoint='../../site_templates/pdfs_sites/CookpointMenuTODAY.pdf'
+master_cookpoint='../../site_templates/pdfs_sites/cookpoint_master_menu.pdf'
 URL = 'http://www.cookpoint.cz/files/1062_menu.pdf'
 
 def download_cookpoint():

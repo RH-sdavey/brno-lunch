@@ -8,7 +8,7 @@
 # master_miomi = 'pdfs_sites/miomi_master.html'
 URL = 'http://www.sushi-miomi.cz/jidelni-listek'
 # rep = "MIOMIREPLACEME"
-# index_file = "index.html"
+# index_file = "londynske.html"
 
 
 # def download_miomi():

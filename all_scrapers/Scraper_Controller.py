@@ -1,4 +1,6 @@
 import datetime
+import os
+
 import requests
 from bs4 import BeautifulSoup
 import unidecode
@@ -13,7 +15,7 @@ class AbstractScraperClass(ABC):
         self.name = name
         self.url = url
         self.rep = rep
-        self.index_file = "index.html"
+        self.index_file = "../../pages/londynske.html"
         self.part_we_want = part_we_want
         self.html_tag_we_want = self.part_we_want[0]
         self.html_selector_we_want = self.part_we_want[1]
