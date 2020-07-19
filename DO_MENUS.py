@@ -15,7 +15,7 @@ os.chdir('all_scrapers')
 for area in list(all_areas):
     print(f"========== {area.capitalize()} Section Start ===============")
     os.chdir(area)
-    shutil.copy(f'../../site_templates/{area}.html', f'../{area.replace("_", "-")}.html')
+    shutil.copy(f'../../site_templates/{area}.html', f'../../pages/{area.replace("_", "-")}.html')
     for restaurant in all_areas[area]:
         moduleToImport = f'.{area}.{restaurant}'
         gbl[moduleToImport] = importlib.import_module(moduleToImport, package='all_scrapers')
