@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Londynske Lunch | Sean Davey</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../website/css/jquery.jscrollpane.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../website/css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="../website/css/custom.css" />
+    <script src="../website/js/modernizr.custom.79639.js"></script>
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+
+    <style>
+<!--    Makalu styling -->
+
+        .makalu_soup {
+            color: #339CFF;
+            font-size: 1em;
+        }
+
+        .makalu_day {
+            color: red;
+            font-size: 2em;
+        }
+<!--        /Makalu   -->
+
+<!--    Pupek Styling -->
+
+        .menu_jidlo_polevka {
+            color: black;
+            font-size: 1.4em;
+        }
+        
+        .menu_jidlo_text {
+            color: black;
+            font-size: 1.4em;
+        }
+        
+        .menu_jidlo_cena {
+            color: red;
+            font-size: 1.4em;
+        }
+
+        .b_pupek {
+            color: red;
+            font-size: 1.6em;
+        }
+
+<!-- /Pupek  -->
+
+<!-- sediveho -->
+
+        .font_8 {
+            color: black;
+            font-size: 1.4em;
+        }
+
+        .font_8_day {
+            color:red;
+            font-size:1.6em;
+        }
+<!-- /sediveho -->
+
+<!-- Babeta  -->
+
+        .column-1 {
+            color: red;
+            font-size: 1.4em;
+        }
+        
+        .column-2 {
+            color: black;
+            font-size: 1.4em
+        }
+        <!-- /Babeta  -->
+
+        .column-3 {
+            color: red;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="menu-panel">
+            <h3>Londýnské Lunch Scraper</h3>
+            <ul id="menu-toc" class="menu-toc">
+                <li class="menu-toc-current"><a href="#home">Home Page</a></li>
+                <li><a href="#Makalu">Makalu</a></li>
+                <li><a href="#Pupek">Pupek</a></li>
+                <li><a href="#Union">Union</a></li>
+                <li><a href="#Sediveho">U Šedivého Vola</a></li>
+                <li><a href="#Babeta">Babeta</a></li>
+                <li><a href="#Mitrovski">Mitrovski</a></li>
+                <li><a href="#Tenmaya">Tenmaya</a></li>
+                <li><a href="#Eurest">Eurest</a></li>
+                <li><a href="#Tesare">Tesaře</a></li>
+                <li><a href="#Kometa">Kometa</a></li>
+                <li><a href="#Miomi">Miomi</a></li>
+                <li><a href="#Iqmoravka">IQ Moravka</a></li>
+                <li><a href="#Delivery">Delivery</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+            </ul>
+        </div>
+
+        <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <div class="bb-item" id="home">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Londýnské Lunch Scraper</h2>
+                            <p>Created by Sean Davey, 2020</p>
+                            <p>To navigate you can use the following methods:</p>
+                            <ul style="margin-left: 12em;">
+                                <li><b>Use the left | right arrow buttons on your keyboard</b></li>
+                                <li>Use the menu button to go directly to the page you wish to see</li>
+                                <li>Use the arrow buttons at the top of the page</li>
+                                <li>Use the mouse to "click and drag" left-to-right and right-to-left</li>
+                                <li>Use your finger to swipe (if you on touch-screen device)</li>
+                            </ul>
+                            <p>I really hope its useful for you. If you find a bug please contact me on the "Contact Me" page. Thanks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Makalu">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Makalu</h2>
+                            <p>Website: <a target="_blank" href="http://www.nepalska-restaurace-makalu.cz/">http://www.nepalska-restaurace-makalu.cz/</a></p>
+                            <p>How to get there from Londynske Namesti: Tram 2 or 5 to Nemocnice Milosrdných bratří and 1 minute walk</p>
+                            <hr> <p class="makalu_day">Pondeli</p> <b class="makalu_soup">Polevka:</b><br/>Chicken soup /  Kureci polevka<span style="margin-left:4em;" class="cena"></span><br/>1. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>2. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>3. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>4. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>5. 150g Mix thali<span style="margin-left:4em;" class="cena">128 Kc</span><br/></b>Mix denniho menu<br/><br/><p class="makalu_day">Utery</p></b></p><b class="makalu_soup">Polevka:</b><br/>Chicken soup /  Kureci polevka<span style="margin-left:4em;" class="cena"></span><br/>1. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>2. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>3. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>4. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>5. 150g Mix thali<span style="margin-left:4em;" class="cena">128 Kc</span><br/></b>Mix denniho menu<br/> </p><p class="makalu_day"></b></p> <b class="makalu_soup">Polevka:</b><br/>Chicken soup /  Kureci polevka<span style="margin-left:4em;" class="cena"></span><br/>1. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>2. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>3. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>4. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>5. 150g Mix thali<span style="margin-left:4em;" class="cena">128 Kc</span><br/></b>Mix denniho menu<br/> </p><p class="makalu_day"> Streda</b></p> <b class="makalu_soup">Polevka:</b><br/>Chicken soup / Kureci polevka<span style="margin-left:4em;" class="cena"></span><br/>1. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>2. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>3. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>4. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>5. 150g Mix thali<span style="margin-left:4em;" class="cena">128 Kc</span><br/></b>Mix denniho menu<br/><br/><p class="makalu_day">Ctvrtek</p></b></p><b class="makalu_soup">Polevka:</b><br/>Chicken soup / Kureci polevka<span style="margin-left:4em;" class="cena"></span><br/>1. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>2. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>3. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>4. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>5. 150g Mix thali<span style="margin-left:4em;" class="cena">128 Kc</span><br/></b>Mix denniho menu<br/><br/><p class="makalu_day">Patek</p></b></p><b class="makalu_soup">Polevka:</b><br/>Chicken soup / Kureci polevka<span style="margin-left:4em;" class="cena"></span><br/>1. 150g Aldo Massala<span style="margin-left:4em;" class="cena">99 Kc</span><br/></b>Brambory se stredne pikantni omackou.<br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Pupek">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Pupek</h2>
+                            <p>Website: <a target="_blank" href="https://www.uhovezihopupku.cz/menu/">https://www.uhovezihopupku.cz/menu/</a></p>
+                            <p>How to get there from Londynske Namesti: Tram 2 or 5 to Celní</p>
+                            <hr> <table class="menu_den">
+<tr>
+<th class="menu_text_datum" colspan="5"><b class="b_pupek">Pondeli - 26. 04. 2021</b></th>
+</tr>
+<tr>
+<td class="menu_jidlo_gramaz"></td>
+
+<td class="menu_jidlo_text menu_jidlo_polevka">POLEVKA:Kvetakovy krem se smetanou  A1,7,9</td>
+<td class="menu_jidlo_cena"></td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">1.</td>
+<td class="menu_jidlo_text">120g Smazene rybi file, stouchany brambor, zelny salat A1,3,4,</td>
+<td class="menu_jidlo_cena">114 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">2.</td>
+<td class="menu_jidlo_text">120g Kureci medailonky na zampionech, bulgur s bylinkami A1,9</td>
+<td class="menu_jidlo_cena">124 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">3.</td>
+<td class="menu_jidlo_text">150g Grilovana veprova krkovice se zelenymi fazolkami, hranolky, tatarska omacka A3,7,9,12</td>
+<td class="menu_jidlo_cena">134 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi"> </td>
+<td class="menu_jidlo_text menu_jidlo_akce" style="font-size: 14px;color: black">Akce: Cokoladove brownies s arasidovym maslem 50 Kc, 
+            Okurkovy salatek 35 Kc</td>
+<td class="menu_jidlo_cena" style="font-size: 12px"></td>
+</tr>
+</table> <table class="menu_den">
+<tr>
+<th class="menu_text_datum" colspan="5"><b class="b_pupek">Utery - 27. 04. 2021</b></th>
+</tr>
+<tr>
+<td class="menu_jidlo_gramaz"></td>
+
+<td class="menu_jidlo_text menu_jidlo_polevka">POLEVKA:Kureci vyvar se zeleninou a nudlemi A1,3,9</td>
+<td class="menu_jidlo_cena"></td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">1.</td>
+<td class="menu_jidlo_text">120g Veprova sekana s majorankou, bramborova kase, st.okurek A1,3,9,10</td>
+<td class="menu_jidlo_cena">114 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">2.</td>
+<td class="menu_jidlo_text">120g Filovane kureci prso, spagety s rajcatovym pestem, Parmezan, rukola A1,7,12</td>
+<td class="menu_jidlo_cena">124 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">3.</td>
+<td class="menu_jidlo_text">120g Hovezi gulas na cernem pivu s cervenou cibuli, houskovy knedlik 1,3,9</td>
+<td class="menu_jidlo_cena">134 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi"> </td>
+<td class="menu_jidlo_text menu_jidlo_akce" style="font-size: 14px;color: black">Akce: Cokoladove brownies s arasidovym maslem 50 Kc, 
+            Okurkovy salatek 35 Kc</td>
+<td class="menu_jidlo_cena" style="font-size: 12px"></td>
+</tr>
+</table> <table class="menu_den">
+<tr>
+<th class="menu_text_datum" colspan="5"><b class="b_pupek">Streda - 28. 04. 2021</b></th>
+</tr>
+<tr>
+<td class="menu_jidlo_gramaz"></td>
+
+<td class="menu_jidlo_text menu_jidlo_polevka">POLEVKA:Kulajda  A1,3,7,9</td>
+<td class="menu_jidlo_cena"></td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">1.</td>
+<td class="menu_jidlo_text">120g Veprove ragu s fazolemi a kukurici,rozpeceny  pita chleb A1,9,12</td>
+<td class="menu_jidlo_cena">114 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">2.</td>
+<td class="menu_jidlo_text">120g Kureci zavitek s pestem z medvediho cesneku a syrem, ryze Basmati A1,7,9</td>
+<td class="menu_jidlo_cena">124 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">3.</td>
+<td class="menu_jidlo_text">120g Medailonky z veprove panenky s grilovanou zeleninou a opekanym bramborem, bylinkovy dip A3,7,9</td>
+<td class="menu_jidlo_cena">134 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi"> </td>
+<td class="menu_jidlo_text menu_jidlo_akce" style="font-size: 14px;color: black">Akce: Cokoladove brownies s arasidovym maslem 50 Kc, 
+            Okurkovy salatek 35 Kc</td>
+<td class="menu_jidlo_cena" style="font-size: 12px"></td>
+</tr>
+</table> <table class="menu_den">
+<tr>
+<th class="menu_text_datum" colspan="5"><b class="b_pupek">Ctvrtek - 29. 04. 2021</b></th>
+</tr>
+<tr>
+<td class="menu_jidlo_gramaz"></td>
+
+<td class="menu_jidlo_text menu_jidlo_polevka">POLEVKA:Cockova polevka A1,9</td>
+<td class="menu_jidlo_cena"></td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">1.</td>
+<td class="menu_jidlo_text">120g Veprovy vrabec, duseny spenat, bramborovy knedlik  A1,3,7</td>
+<td class="menu_jidlo_cena">114 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">2.</td>
+<td class="menu_jidlo_text">120g Smazene kureci stripsy balene v cornflakes, bramborova kase, Coleslaw A1,3,7,10</td>
+<td class="menu_jidlo_cena">124 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">3.</td>
+<td class="menu_jidlo_text">300g Lasagne s bolonskym ragu, gratinovane syrem, zeleninovy salatek A1,3,7,12</td>
+<td class="menu_jidlo_cena">134 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi"> </td>
+<td class="menu_jidlo_text menu_jidlo_akce" style="font-size: 14px;color: black">Akce: Cokoladove brownies s arasidovym maslem 50 Kc, 
+            Okurkovy salatek 35 Kc</td>
+<td class="menu_jidlo_cena" style="font-size: 12px"></td>
+</tr>
+</table> <table class="menu_den">
+<tr>
+<th class="menu_text_datum" colspan="5"><b class="b_pupek">Patek - 30. 04. 2021</b></th>
+</tr>
+<tr>
+<td class="menu_jidlo_gramaz"></td>
+
+<td class="menu_jidlo_text menu_jidlo_polevka">POLEVKA:Frankfurtska s parkem  A1,7,9</td>
+<td class="menu_jidlo_cena"></td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">1.</td>
+<td class="menu_jidlo_text">120g Jitrnicovy a jelitkovy prejt, kysane zeli, vareny brambor A1,9,12</td>
+<td class="menu_jidlo_cena">114 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">2.</td>
+<td class="menu_jidlo_text">120g Kureci spiz s klobasou, paprikou a cibuli, hranolky, tatarska omacka A3,10</td>
+<td class="menu_jidlo_cena">124 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">3.</td>
+<td class="menu_jidlo_text">120g Caesar salat s kurecim prsem a krutony A1,3,4,</td>
+<td class="menu_jidlo_cena">134 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi"> </td>
+<td class="menu_jidlo_text menu_jidlo_akce" style="font-size: 14px;color: black">Akce: Cokoladove brownies s arasidovym maslem 50 Kc, 
+            Okurkovy salatek 35 Kc</td>
+<td class="menu_jidlo_cena" style="font-size: 12px"></td>
+</tr>
+</table> <table class="menu_den stale_jidlo">
+<tr>
+<th class="menu_text_stale_jidlo" colspan="5">Stale jidlo na menu:</th>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">4.</td>
+<td class="menu_jidlo_text">150g Hovezi pupek marinovany v cervenem vine, konfitovany v husim sadle, stouchany brambor, karamelizovana cibulka,  A1,12</td>
+<td class="menu_jidlo_cena">145 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">5.</td>
+<td class="menu_jidlo_text">150g Anglicky roastbeef, opekany brambor, tatarska omacka A3,10,12</td>
+<td class="menu_jidlo_cena">149 Kc</td>
+</tr>
+<tr>
+
+<td class="menu_jidlo_poradi">6.</td>
+<td class="menu_jidlo_text">150g Tortilla s anglickym roastbeefem, chedarem, olivami a americkym dressingem, salatek A1,3,6,7,12</td>
+<td class="menu_jidlo_cena">149 Kc</td>
+</tr>
+</table>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Union">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Union</h2>
+                            <p>Website: <a target="_blank" href="http://www.restauraceunion.cz/denni-menu-2/">http://www.restauraceunion.cz/denni-menu-2/</a></p>
+                            <p>How to get there from Londynske Namesti: Tram 2 or 5 to Celní then 1 minute walk</p>
+                            <hr> 
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Sediveho">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>U Šediveho Vola</h2>
+                            <p>Website: <a target="_blank" href="https://www.usedivehovola.com/denni-obedove-menu">https://www.usedivehovola.com/denni-obedove-menu</a></p>
+                            <p>How to get there from Londynske Namesti: Tram 5 to Fakultní nemocnice u sv. Anny v Brně</p>
+                            <hr> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif"><span style="font-size:28px"><span style="font-weight:bold">ROZVOZ OBEDOVEHO MENU ZDARMA</span></span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif"><span class="wixGuard"> </span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">Objednavky menu prijimame kazdy den do 9.00 hod. na tel. +420 608 678 740. Jidlo si ale muzete vybrat a objednat jednorazove rovnou na cely tyden. </span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif"><span class="wixGuard"> </span></span></p> <p class="font_8" style="font-size:15px"><span style="font-weight:bold"><span style="font-family:roboto-thin,roboto,sans-serif">Cenik obedoveho menu vcetne polevky a kazdy den male prekvapeni:</span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">Menu cislo 1 - 95 Kc</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">Menu cislo 2 - 100 Kc  </span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">Menu cislo 3 az 5 - 105 Kc</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">Box - 10 Kc </span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">Alergeny najdete v zavorkach u kazdeho jidla.</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif"><span class="wixGuard"> </span></span></p> <p class="font_8" style="font-size:15px"><span style="font-weight:bold;"><span style="font-family:roboto-thin,roboto,sans-serif;">Pondeli   26.04.2021</span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Porkova polevka    (1, 3, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Grilovane kureci medailonky, spagety pomodoro se spanelskymi olivami sypane parmezanem   ( 1, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Pecene kuratko po zahradnicku s jarnimi redkvickami, dusena hraskova ryze    ( 1, 7, 9)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Dozlatova usmazeny Hermelin, varene brambory a domaci tatarska omacka   ( 1, 3, 7, 10)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Kyta z mladeho selatka po myslivecku na smetane, spikovana klinky slaniny, houskove knedliky  (1, 3, 7, 9, 10)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Pekingske nudle z krutich prsou, pripravene na woku na pekingsky zpusob s krupavou zeleninou, citronova ryze s burskymi orechy    ( 5, 6, 8, 11 )</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">                                                              </span></p> <p class="font_8" style="font-size:15px"><span style="font-weight:bold;"><span style="font-family:roboto-thin,roboto,sans-serif;">Utery     27.04.2021</span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Dragounska cesnecka    (3)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Indicke lehce palive kari s cockou a kvetakem, s psenicnou tortillou   (1, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Hrachova kase omastena cibulkou s uzenym masem, proutky sterilovanych okurek a chlebem   ( 1)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Gratinovany kureci steak se sunkou a syrem, smazene domaci steakove hranolky, americky dressing s bylinkami   (1, 3, 7, 10)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Spanelsky ptacek, pripraveny z veprove kotlety, dusena dlouhozrnna ryze    (1, 3, 10)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Rybi file z aljasske tresky zapecene se syrem a baby karotkou, bramborova kase, zeleninovy salat    (4, 7)</span></p> <p class="font_8" style="font-size:15px"> </p> <p class="font_8" style="font-size:15px"><span style="font-weight:bold;"><span style="font-family:roboto-thin,roboto,sans-serif;">Streda   28.04.2021 </span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Jihoceska kulajda    (1, 3, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Povidlove tasticky, posypane mletym makem    (1, 3, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Francouzske brambory se zlatavou syrovou kurkou, proutky sterilovanych okurek     (1, 3, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Ondrasuv kureci rizek v bramboraku s domacim salatem Coleslaw    (1, 3, 9)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Svickova hovezi pecene z mladeho ceskeho bycka, houskove knedliky    (1, 3, 7, 9, 10)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Grilovana marinovana krkovicka, stouchane brambory, salat z cinskeho zeli    (5, 6, 10, 11)</span></p> <p class="font_8" style="font-size:15px"> </p> <p class="font_8" style="font-size:15px"><span style="font-weight:bold;"><span style="font-family:roboto-thin,roboto,sans-serif;">Ctvrtek  29.04.2021</span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Kureci vyvar s nudlemi    (1, 9)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Smazeny kvetak, varene petrzelkove brambory, domaci tatarska omacka    (1, 3, 7, 10)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Penne se spenatem a restovanymi kurecimi nudlickami, posypane syrem Gran Moravia    (1, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Cheeseburger se stavnatym karbanatkem prelitym domaci BBQ omackou, osmazene bramborove korenene lodicky    (1, 3, 5, 6, 10, 11)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Znojemska veprova pecene, dusena maslova ryze    (1, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Losos pripraveny na cesnekovem masle, bramborova kase, ovocny kompot    (4, 7)</span></p> <p class="font_8" style="font-size:15px"> </p> <p class="font_8" style="font-size:15px"><span style="font-weight:bold;"><span style="font-family:roboto-thin,roboto,sans-serif;">Patek    30.04.2021</span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Zeleninovy borsc s masem    (1, 7, 9)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Zapekane palacinky vanilkovym kremem, prolozene jablecnou strudlovou naplni    (1, 3, 7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Paprikove rizoto s veprovym masem a hraskem sypane strouhanym syrem, sterilovany okurek    (7)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Smazeny kureci rizek, irske smetanove stouchane brambory s cibulkou a kostickami slaniny, nakladana calamada    (1, 3, 7, 9)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Hovezi nudle Stroganov, dusena sunkova ryze    (1, 7, 10)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif;">Grilovane kruti prso filovane na platky, s orientalnim bulgurem a malym michanym salatem    (1, 11)</span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif"><span class="wixGuard"> </span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">Restaurace U sediveho vola, Pekarska 80;   </span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">                            <span style="text-decoration:underline"><a href="http://www.usedivehovola.com" rel="noopener" target="_blank">www.usedivehovola.com</a></span></span></p> <p class="font_8" style="font-size:15px"><span style="font-family:roboto-thin,roboto,sans-serif">                            <object height="0"><a data-auto-recognition="true" href="mailto:usedivehovola80@gmail.com">usedivehovola80@gmail.com</a></object></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Babeta">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Babeta</h2>
+                            <p>Website: <a target="_blank" href="http://babeta-rest.cz/#dayfood">http://babeta-rest.cz/#dayfood</a></p>
+                            <p>How to get there from Londynske Namesti: Car is fastest</p>
+                            <hr> <table class="tablepress tablepress-id-4" id="tablepress-4">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1"> </th><th class="column-2">Polevka dne + hlavni chod = 105 Kc</th><th class="column-3"> </th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Polevka</td><td class="column-2">Jarni zeleninovy krem (1,3,7,9)</td><td class="column-3"></td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">Menu 1:</td><td class="column-2">Filety z veprove kotlety v krupavem bramboraku se zelnym salatem (1,3,7)</td><td class="column-3">105 Kc</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">Menu 2:</td><td class="column-2">Restovane kousky kurecich prsou na zelenine s cesnekem  + pecena ryze na masle (1,7,9,10)</td><td class="column-3">105 Kc</td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">Menu 3:</td><td class="column-2">Spagety ''BOLOGNESE'' s bazalkou  (1,3,7)</td><td class="column-3">105 Kc</td>
+</tr>
+<tr class="row-6 even">
+<td class="column-1">Hotovka tydne:</td><td class="column-2">150g  - Kanci ragu na medvedim cesneku a zelenine s karlovarskym knedlikem  = 125,-   vc. polevky</td><td class="column-3">125 Kc</td>
+</tr>
+<tr class="row-7 odd">
+<td class="column-1">Salat tydne:</td><td class="column-2">Dubove salaty, polnicek, cherry rajce, cervena cibulka, medovy dresing, grilovane spaliky syru''SATYR''  + bylinkova bagetka (1,7) = 125,- vc. polevky </td><td class="column-3">125 Kc</td>
+</tr>
+<tr class="row-8 even">
+<td class="column-1"></td><td class="column-2"></td><td class="column-3"></td>
+</tr>
+<tr class="row-9 odd">
+<td class="column-1"></td><td class="column-2"></td><td class="column-3"></td>
+</tr>
+<tr class="row-10 even">
+<td class="column-1"></td><td class="column-2"></td><td class="column-3"></td>
+</tr>
+</tbody>
+</table>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Mitrovski">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Mitrovski</h2>
+                            <p>Website: <a target="_blank" href="https://www.mitrovski.cz/menu/">https://www.mitrovski.cz/menu/</a></p>
+                            <p>How to get there from Londynske Namesti: Tram 5 to Mendlovo Namesti then 2 minutes walk </p>
+                            <hr> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center">PONDELI</h1> </div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><br/></p><p>Kvetakovy krem</p><p>1. 180g Kureci nudlicky se sweet chilli omackou jasmino-va ryze 125-</p><p>2. 180g Veprova krkovice s cibulovymi krouzky americke brambory 125- </p><p>3. 350g Hribove risotto s vlasskymi orechy parmazan 135-</p><p>4. 180g Treska tmava na salatu z cervene cocky pecena brambora 175-</p><p>5. 180g Konfitovane kachni stehno batatove pyre bramborove krokety 195-</p><p>Dezert: Trhanec s jahodovym coulis 39-</p><p></p><p></p><p><br/></p><p></p><p></p><p></p><p></p><p></p></div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center">UTERY</h1> </div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Frankfurtska</p><p>1. 180g Smazene tvaruzky varene brambory s pazitkou tatarska omacka 125-</p><p>2. 180g Hovezi pecene se sipkovou omackou zemlovy knedlik 125-</p><p>3. 350g Hribove risotto s vlasskymi orechy parmazan 135-</p><p>4. 180g Treska tmava na salatu z cervene cocky pecena brambora 175-</p><p>5. 180g Konfitovane kachni stehno batatove pyre bramborove krokety 195-</p><p>Dezert: Trhanec s jahodovym coulis  39-</p><p></p><p></p><br/><p></p><p></p><p></p><p></p><p></p></div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center">STREDA</h1> </div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Fazolova</p><p>1. 180g Kureci prso s pecenou zeleninou a bramborem hummus 125-</p><p>2. 180g Veprova kotleta s dijonskou omackou mackane brambory 125-</p><p>3. 350g Hribove risotto s vlasskymi orechy parmazan 135-</p><p>4. 180g Treska tmava na salatu z cervene cocky pecena brambora 175-</p><p>5. 180g Konfitovane kachni stehno batatove pyre bramborove krokety 195-</p><p>Dezert: Trhanec s jahodovym coulis 39-</p><br/><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center">CTVRTEK</h1> </div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Borsc</p><p>1. 180g Kruti prso spikovane pancetou fazolove lusky hranolky 125-</p><p>2. 180g Panenka s zampionovym ragu restovana tarho-na 125-</p><p>3. 350g Hribove risotto s vlasskymi orechy parmazan 135-</p><p>4. 180g Treska tmava na salatu z cervene cocky pecena brambora 175-</p><p>5. 180g Konfitovane kachni stehno batatove pyre bramborove krokety 195-</p><p>Dezert: Trhanec s jahodovym coulis  39-</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center">PATEK</h1></div> <div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Hovezi vyvar s nudlemi</p><p&gt;1. 125-<p 180g a brynzou cibulkou halusky s slaninou><p>1. 180g Halusky s brynzou slaninou a cibulkou 125-</p><p>2. 180g Veprovy rizek z laku vidensky bramborovy salat 125-</p><p>3. 350g Hribove risotto s vlasskymi orechy parmazan 135-</p><p>4. 180g Treska tmava na salatu z cervene cocky pecena brambora 175-</p><p>5. 180g Konfitovane kachni stehno batatove pyre bramborove krokety 195-</p><p>Dezert: Trhanec s jahodovym coulis  39-</p><br/><p></p><p></p><p></p><p&gt;1. 125-<p 180g a cibulkou kysanym masem s strapacky uzenym vi-denskoou zelim></p&gt;1.><p&gt;1. 125-<p 180g filovanym krutim masem parmazan pomodoro s spaghetti></p&gt;1.><p&gt;1. 125-<p 180g bryndzove halusky se slaninou></p&gt;1.><p&gt;1. 125-<p 180g bolognese parmazan spaghetti></p&gt;1.><p&gt;1. 125-<p 180g a bramborova jelitkovy jitrnicovy kysanym lepenice prejt s smetanou zakysanou zelim></p&gt;1.><p&gt;1. 125-<p 180g a cibulka kysanym masem s strapacky uzenym vi-denska zelim><p&gt;1. 125-<p 180g bbq coleslaw kureci kridla pecivo salat v></p&gt;1.><p&gt;1. 125-<p 180g a cibulkou hrachova kase masem pecivo s sazenym uzenym vej-cem videnskou></p&gt;1.><p&gt;1. 125-<p 180g arrabiata filovanym kurecim parmazan prsem s spaghetti></p&gt;1.><p&gt;1. 125-<p 180g bramborove cibulka knedliky masem plnene uzenym videnska zeli cervene></p&gt;1.><p&gt;1. 125-<p 350g a baby bramborove filovanym gorgonzolovou krutim noky omackou prsem s spenatem></p&gt;1.><p&gt;1. 125-<p 350g ementalem gratinovane kysely masem okurek s testoviny uzenym zapecene></p&gt;1.><p&gt;1. 125-<p 180g bramborove cibulka knedliky kysane masem plnene uzenym videnska zeli cervene><p&gt;1. 125-<p 180g bramborove knedliky se veprove vypecky spenatem></p&gt;1.><p&gt;1. 125-<p 180g a cibulkou klobasou kyselo na pecivo s smazenou vejcem cocka></p&gt;1.><p&gt;1. 125-<p 180g a bbq bramborove klasem kukuric-nym kureci omackou pecene s steak stehenni ctvrtky></p&gt;1.><p&gt;1. 125-<p 350g a cibulka kysanym masem s strapacky uzenym vi-denska zelim></p&gt;1.><p&gt;1. 125-<p 350g a parmazan por-tobellem se smetanou testoviny cerstve spenatem></p&gt;1.><p&gt;1. 125-<p 350g a chorizem drcenymi parmazan rajcaty restovanym s spaghetti cesnekem></p&gt;1.><p&gt;1. 125-<p 350g a chilli coleslaw kureci kridla medu na pecena pecivo></p&gt;1.><p&gt;1. 125-<p 180g a chedarem fazole kovbojske kukurici pecivo s cabajkou></p&gt;1.><p&gt;1. 125-<p 350g a cibulkou hrachova kase masem pecivo s uzenym vejcem></p&gt;1.><p&gt;1. 125-<p 350g a bylinkovym kozim orechy pestem s spaghetti syrem vlasskymi></p&gt;1.><p&gt;1. 125-<p 350g a cibulkou klobasou kyselo na pecivo s vejcem videnskou cocka></p&gt;1.><p&gt;1. 125-<p 180g a cibulkou kysanym masem s strapacky uzenym videnskou zelim></p&gt;1.><p&gt;1. 125-<p 180g a bramborovy bilym cibulkou knedlik kysanym s veprovy vrabec videnskou zelim></p&gt;1.><p&gt;1. 125-<p 350g a hraskem masem okurek s testoviny uzenym zapecene></p&gt;1.><p&gt;1. 125-<p 180g a cukrovym gorgonzolovou hraskem omackou s testoviny></p&gt;1.><p&gt;1. 125-<p 180g a chillisalat coleslaw kureci kridla medu na pecivo></p&gt;1.><p&gt;1. 180g a cibulkou klobasou kyselo na pecivo125-<p s vejcem videnskou cocka></p&gt;1.><p&gt;1. 125-<p 180g bolognese parmazan tagliatelle></p&gt;1.><p&gt;1. 125-<p 180g a cibulkou kysanym masem s strapacky uzenym videnskou zelim></p&gt;1.><p&gt;1. 125-<p 180g a chedarem fazole kovbojske kukurici pecivo s cabajkou></p&gt;1.><p&gt;1. 125-<p 180g a cibulkou klobasou kyselo na pecivo s sazenym vejcem videnskou cocka></p&gt;1.><p&gt;1. 125-<p 180g a cukrovym gorgonzolovou hraskem omackou s testoviny cerstve></p&gt;1.><p&gt;1. 125-<p 180g a chilli coleslawpecivo kureci kridylka medu na salat></p&gt;1.><p&gt;1. 125-<p 180g a cibulkou hrachova kase masem pecivo s sazenym uzenym vejcem videnskou></p&gt;1.><p&gt;1. 125-<p 180g a dynovymi paprik pestem pecenych s seminky slanym spaghetti syrem z></p&gt;1.><p&gt;1. 125-<p 180g kure na paprice testoviny cerstve></p&gt;1.><p&gt;1. 125-<p 180g a arrabbiata olivami parmazan rajcaty s susenymi taglioline></p&gt;1.><p&gt;1. 125-<p 180g a gorgonzolou pancetou s spaghetti></p&gt;1.><p></p></p&gt;1.></p&gt;1.></p&gt;1.></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Tenmaya">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Tenmaya</h2>
+                            <p>Website: <a target="_blank" href="http://www.nepalska-restaurace-makalu.cz/">http://www.nepalska-restaurace-makalu.cz/</a></p>
+                            <p>How to get there from Londynske Namesti: Tram 2 or 5 to Celní</p>
+                            <hr>
+                            <p class="info">
+                                <img src="../site_templates/pdfs_sites/ten1.jpg">
+                                <img src="../site_templates/pdfs_sites/ten2.jpg">
+                                <img src="../site_templates/pdfs_sites/ten3.jpg">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Eurest">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Eurest</h2>
+                            <p>Website: <a target="_blank" href="https://www.eurest-brno.cz/index.php/8-jidelni-listky">https://www.eurest-brno.cz/jidelni-listky</a></p>
+                            <p>How to get there from Londynske Namesti: Walk over the road (1 minute from office)</p>
+                            <hr>
+                            <p class="info">
+                                <iframe height="700px" width="60%" src="https://www.eurest-brno.cz/index.php/8-jidelni-listky"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Tesare">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Hostinec U Tesaře</h2>
+                            <p>Website: <a target="_blank" href="http://www.utesare.cz/">http://www.utesare.cz/</a></p>
+                            <p>How to get there from Londynske Namesti: Tram 2 or 5 to Celní then 2 minutes walk</p>
+                            <hr> <embed src="../site_templates/pdfs_sites/tesare_master_menu.pdf" width="900px" height="800px" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Kometa">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Kometa</h2>
+                            <p>Website: <a target="_blank" href="https://www.kometapub.cz/arena">https://www.kometapub.cz/arena</a></p>
+                            <p>How to get there from Londynske Namesti: Bus 40 or 61 to Křídlovická</p>
+                            <hr>
+                            <p class="info">
+                                <iframe height="700px" width="60%" src="https://www.kometapub.cz/arena"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Miomi">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Miomi</h2>
+                            <p>Website: <a target="_blank" href="http://www.sushi-miomi.cz/">http://www.sushi-miomi.cz/</a></p>
+                            <p>How to get there from Londynske Namesti: Walk over the road (1 minute from office)</p>
+                            <hr> THIS WEBSITE IS A PAIN TO SCRAPE!
+                            <hr> It seems to me their daily buffet options dont change, and have no details on the website
+                            <hr> If you are a fan of over-priced low-quality sushi this is the place for you
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Iqmoravka">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>IQ Moravka</h2>
+                            <p>Website: <a target="_blank" href="http://www.iqrestaurant.cz/moravka.html?iframe=true">http://www.iqrestaurant.cz/moravka.html?iframe=true</a></p>
+                            <p>How to get there from Londynske Namesti: TODO(Dont know, never been)</p>
+                            <hr> <embed src="../site_templates/pdfs_sites/menuIQ_master.pdf" width="800px" height="700px" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Delivery">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Delivery Links</h2>
+                            <p class="info">
+                                <div style="width:50%; margin-left:10em;" class="pages-nav__item pages-nav__item--social">
+                                    <a class="link link--social link--faded" style="font-size:1.4em" href="https://www.damejidlo.cz/poke-kings-brno">Poke Kings</a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.4em" href="https://www.donantonio.cz/">Don Antonio</a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.4em" href="https://wolt.com/">Wolt</a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.4em" href="https://rozvoz-brno.giraffy.cz/">Giraffy</a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.4em" href="https://www.amici.cz/">Amici Pizza + Burger</a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.4em" href="https://www.damejidlo.cz/">Dame Jidlo</a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.4em" href="https://kfc.cz/main/home/news">KFC Delivery</a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="Contact">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Contact Me</h2>
+                            <p class="info">
+                                <div style="width:50%; margin-left:10em;" class="pages-nav__item pages-nav__item--social">
+                                    <a class="link link--social link--faded" style="font-size:1.5em" href="https://github.com/RH-sdavey/tieto_lunch"><span>Github</span></a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.5em" href="https://www.linkedin.com/in/rh-sean-davey/"><span>LinkedIn</span></a>
+                                    <hr/>
+                                    <a class="link link--social link--faded" style="font-size:1.5em" href="https://rh-sdavey.github.io/sean_portfolio/"><span>Portfolio</span></a>
+                                </div>
+                                <p>Thanks for using the site! I hope its useful for you.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <span id="bb-nav-prev">&larr;</span>
+                <span id="bb-nav-next">&rarr;</span>
+            </nav>
+
+            <span id="tblcontents" class="menu-button">Table of Contents</span>
+
+        </div>
+
+    </div>
+    <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../website/js/jquery.mousewheel.js"></script>
+    <script src="../website/js/jquery.jscrollpane.min.js"></script>
+    <script src="../website/js/jquerypp.custom.js"></script>
+    <script src="../website/js/jquery.bookblock.js"></script>
+    <script src="../website/js/page.js"></script>
+
+    <script>
+        $(function() {
+
+            Page.init();
+
+        });
+    </script>
+</body>
+
+</html>
